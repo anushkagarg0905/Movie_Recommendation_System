@@ -6,7 +6,7 @@ This project is a simple movie recommendation system built using machine learnin
 
 The system uses a content-based filtering approach. It looks at different features like genres, cast, keywords, and overview to find similarities between movies and recommend the most relevant ones.
 
-#Features
+# Features
 
 - Recommends top 5 similar movies
 - Uses movie metadata for better suggestions
@@ -14,7 +14,7 @@ The system uses a content-based filtering approach. It looks at different featur
 - Simple and interactive UI built with Streamlit
 
 
-#Tech Stack
+# Tech Stack
 
 - Python
 - Pandas, NumPy
@@ -23,12 +23,12 @@ The system uses a content-based filtering approach. It looks at different featur
 - Streamlit
 
   
-#Dataset
+# Dataset
 
 - TMDB 5000 Movies Dataset
 - TMDB 5000 Credits Dataset
 
-#Procedure
+# Procedure
 
 - Cleaned and merged the datasets
 - Extracted useful features (genres, cast, crew, keywords, overview)
