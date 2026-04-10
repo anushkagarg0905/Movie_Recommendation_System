@@ -1,38 +1,37 @@
-# 🎬  Movie_Recommendation_System
-Designed an end-to-end ML pipeline for movie recommendation including preprocessing, feature engineering and similarity-based retrieval. Deployed a user-interactive system with real-time recommendations and visual analytics using Streamlit.
----
+# 🎬  CineWatch – Movie Recommendation System
 
-## 🚀 Features
+This project is a simple movie recommendation system built using machine learning. It suggests similar movies based on the one selected by the user.
 
-- 🔎 Search movies and get similar recommendations
-- 🎭 Filter movies by genre
-- 🖼️ Poster-based UI using TMDB API
-- 🎯 Click on any movie to get recommendations
-- 🔥 Trending movies section
-- 📊 Basic analytics and insights
+# About the Project
 
----
+The system uses a content-based filtering approach. It looks at different features like genres, cast, keywords, and overview to find similarities between movies and recommend the most relevant ones.
 
-## 🧠 How It Works
+#Features
 
-The system uses **Content-Based Filtering**:
-- Movie genres are converted into vectors using **TF-IDF**
-- Similarity between movies is calculated using **Cosine Similarity**
-- Movies with highest similarity scores are recommended
+- Recommends top 5 similar movies
+- Uses movie metadata for better suggestions
+- Shows movie posters using TMDB API
+- Simple and interactive UI built with Streamlit
 
----
 
-## 🛠️ Tech Stack
+#Tech Stack
 
-- **Language:** Python  
-- **Libraries:** Pandas, NumPy, Scikit-learn  
-- **ML Techniques:** TF-IDF, Cosine Similarity  
-- **Frontend:** Streamlit  
-- **API:** TMDB (for movie posters)  
-- **Deployment:** Colab + Ngrok  
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- NLTK
+- Streamlit
 
----
+  
+#Dataset
 
-## 📊 Dataset
+- TMDB 5000 Movies Dataset
+- TMDB 5000 Credits Dataset
 
-- MovieLens
+#Procedure
+
+- Cleaned and merged the datasets
+- Extracted useful features (genres, cast, crew, keywords, overview)
+- Converted text data into vectors using CountVectorizer
+- Calculated similarity using cosine similarity
+- Returned top 5 similar movies
